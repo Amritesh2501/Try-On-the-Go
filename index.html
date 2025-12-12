@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Try on the Go</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+                stone: {
+                    850: '#1c1917',
+                    900: '#1c1917',
+                    950: '#0c0a09'
+                }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Instrument Serif', 'serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <script type="importmap">
+      {
+        "imports": {
+          "react/": "https://esm.sh/react@^19.1.0/",
+          "react": "https://esm.sh/react@^19.1.0",
+          "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+          "@google/genai": "https://esm.sh/@google/genai@^1.10.0",
+          "react-image-crop": "https://esm.sh/react-image-crop@^11.0.6",
+          "framer-motion": "https://esm.sh/framer-motion@^11.2.12",
+          "clsx": "https://esm.sh/clsx@^2.1.1",
+          "tailwind-merge": "https://esm.sh/tailwind-merge@^2.4.0",
+          "@tsparticles/react": "https://esm.sh/@tsparticles/react@^3.0.0",
+          "@tsparticles/engine": "https://esm.sh/@tsparticles/engine@^3.5.0",
+          "@tsparticles/slim": "https://esm.sh/@tsparticles/slim@^3.5.0"
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://esm.sh/react-image-crop@^11.0.6/dist/ReactCrop.css" />
+    <link rel="stylesheet" href="/index.css" />
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
